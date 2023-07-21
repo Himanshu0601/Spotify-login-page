@@ -1,13 +1,248 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .main-body{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 4rem;
+    gap: .5rem;
+  }
+  .container1{
+    /* border: 3px solid  red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    align-items: center;
+    
+  }
+  .container1>:first-child{
+    height: 6rem;
+    width: 15rem;
+    background-image: url("img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .container1 :nth-child(2){
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .container1>:nth-child(3){
+    background-color:#2143b1ca;
+    color: white;
+    border: none;
+  }
+  .button{
+    
+    border: 2px solid rgb(27, 25, 25);
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    width: 28rem;
+    border-radius: 2rem;
+  }
+  .button :first-child{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .container1>:nth-child(3) :first-child{
+    background-image: url("img/fb-logo.jpg");
+
+  }
+  .container1>:nth-child(4) :first-child{
+    background-image: url("img/google-logo.png");
+  }
+
+  .button:hover{
+    width: 28.4rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 1.5rem;
+  }
+  .container1>:nth-child(5){
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+   
+  }
+  .container1>:nth-child(5) div{
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .container1>:nth-child(5) div hr{
+    width: 12rem;
+    border: 1px solid grey;
+    margin-top: 7px;
+  }
+
+  .container2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 28.9rem;
+    padding:.5rem 2rem;
+    /* border: 3px solid green; */
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .container2 h3{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .container2 input{
+    margin: 7px 0px;
+    padding: 9px;
+    width: 25rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: 2px solid grey;
+
+  }
+  .container2 input:focus{
+    outline:2px solid red;
+    border: none;
+  }
+  .container2 input[type="checkbox"]{
+    width: 2.8rem;
+  }
+  .container2>:nth-child(4)>:last-child{
+    font-weight: lighter;
+    font-size: .9rem;
+  }
+  .container2>:nth-child(6)>div{
+    display: flex;
+    font-weight: lighter;
+    margin-top: 5px;
+    gap: 2.7rem;
+    justify-content: first baseline;
+  }
+  .container2>:nth-child(6)>div input{
+    width: 5rem;
+   
+  }
+  .container2>:nth-child(6)>div select{
+    height: 2.6rem;
+    width: 7rem;
+    background-color: transparent;
+    margin-top: 9px;
+    border-radius: .5rem;
+    border: 2px solid grey;
+    padding: 9px;
+    font-size: 1rem;
+  }
+  .container2>:nth-child(6)>div select:hover{
+    outline:2px solid red;
+    border: none;
+  }
+
+  .container2>:nth-child(7)>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .container2>:nth-child(7)>:last-child{
+    margin-top: 8px;
+    font-weight: lighter;
+  
+  }
+  .container2>:nth-child(7)>:last-child>input{
+   
+    width: 2.3rem;
+  
+  }
+  .container2>:nth-child(7)>:last-child>input{
+    outline: none;
+  }
+
+  .container2>:nth-child(8){
+    display: flex;
+    gap: 1rem;
+    align-items:baseline;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left: 10px;
+  }
+  .container2>:nth-child(8) input{
+    width: 1.5rem;
+  }
+
+  .container2>:nth-child(8) input:focus{
+    outline: none;
+  }
+
+  .container2>:nth-child(9) p{
+    font-weight: normal;
+    font-size: x-small;
+    margin: 15px;
+    text-align: center;
+  }
+ a:link{
+    color: rgb(80, 170, 80);
+  }
+
+  .container2>:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: normal;
+    gap: 1rem;
+  }
+  .container2>:last-child button{
+    width: 11rem;
+    height: 4rem;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border-radius: 1.7rem;
+    background-color: rgb(41, 183, 38);
+    border: 2px solid rgb(57,242,54);
+  }
+
+  @media screen and (max-width: 500px){
+    .button{
+      font-size: 1rem;
+      width: 19rem;
+      border-radius: 1.8rem;
+    }
+    .button:hover{
+      width: 20.5rem;
+      font-size: 1.2rem;
+    }
+    .container1 :nth-child(2){
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .container1>:nth-child(5) div hr{
+      width: 8rem;
+      border: 1px solid grey;
+      margin-top: 7px;
+    }
+
+    .container2{
+      width: 19rem;
+    }
+    .container2 input{
+      width: 18rem;
+    }
+    .container2>:nth-child(6)>div input{
+      width: 3rem;
+     
+    }
+    .container2>:nth-child(7)>div{
+      gap:12px;
+    }
+  }
